@@ -3,9 +3,12 @@
 // Arrays, by Eduardo Corpeño 
 
 #include <iostream>
+// #define AGE_LENGTH 4
 
 int main(){
-    int age[4];
+    const size_t AGE_LENGTH = 4;
+
+    int age[AGE_LENGTH];
     float temp[] = {31.4, 32.2, 38.5};
 
     age[0] = 48;
@@ -13,6 +16,7 @@ int main(){
     age[2] = 42;
     age[3] = 36;
 
+    std::cout << "The length of the Array is " << AGE_LENGTH << " elements" << std::endl;
     std::cout << "The Age of the first person (age[0]) is: " << age[0] << std::endl;
     std::cout << "The Age of the second person (age[1]) is: " << age[1] << std::endl;
     std::cout << "The Age of the third person (age[2]) is: " << age[2] << std::endl;
